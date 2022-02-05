@@ -83,6 +83,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    position: relative;
+    max-width: 100%;
 }
 
 .tea-containers li {
@@ -114,14 +116,19 @@ header {
     margin-bottom: 1rem;
 }
 
-.locations-containers {
-    display: inline-flex;
+.locations-container {
+    position: relative;
+    max-width: 100%;
+    display: flex;
     justify-content: space-between;
     width: 980px;
+    flex-wrap: wrap;
 }
 
 .location {
-   width: 300px;
+   flex: 0 1 300px;
+   min-width: none;
+   overflow: hidden;
    background-color: black;
    text-align: center;
    opacity: 1;
