@@ -72,6 +72,8 @@ header {
 #featured {
     margin: 3em;
     width: 1000px;
+    position: relative;
+    max-width: 100%;
 }
 
 #featured h2, h4 {
@@ -83,8 +85,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    position: relative;
-    max-width: 100%;
 }
 
 .tea-containers li {
